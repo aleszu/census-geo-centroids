@@ -2,10 +2,10 @@
 A collection of CSV files with the latitude/longitude for the centroid of each census shape. These are useful for making dot maps, or other maps where you might need to plot a single discrete location for a given shape.
 
 Available files include:
-* US counties (counties.csv)
-* Census Places (places.csv)
-* Census Tracts (tracts.csv)
-* Zip Code Tabulation Areas (zctas.csv)
+* [US counties](https://github.com/pandringa/census-geo-centroids/blob/master/counties_2018.csv) (2018 definitions)
+* [Census Places](https://github.com/pandringa/census-geo-centroids/blob/master/places_2018.csv) (2018 definitions)
+* [Census Tracts](https://github.com/pandringa/census-geo-centroids/blob/master/tracts_2010.csv) (2010 definitions)
+* [Zip Code Tabulation Areas](https://github.com/pandringa/census-geo-centroids/blob/master/zctas_2018.csv) (2018 definitions)
 
 It doesn't include census blocks by default, since it would create a prohibitively large file. It should theoretically work using `make blocks.csv`, so feel free to give it a try if you've got the hardware and internet connection to spare. (It might take a few hours.) 
 
