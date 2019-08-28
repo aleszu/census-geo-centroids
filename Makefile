@@ -11,6 +11,7 @@ all: $(addsuffix .csv, $(GEOS))
 shapefiles/processed/zctas_2018.geojson: shapefiles/processed/zctas_2018_al.geojson
 	pipenv run python3 merge.py shapefiles/processed/zctas_2018_*.geojson -o $@
 
+# General case for downloading geojson files
 shapefiles/processed/%.geojson:
 	mkdir -p shapefiles
 	pipenv run censusmapdownloader --data-dir shapefiles $(firstword $(subst _, ,$*))
